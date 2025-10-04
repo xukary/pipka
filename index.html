@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-translate="title">Purmerend — город с историей</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 data-translate="title">Purmerend — город с историей</h1>
+    <p data-translate="subtitle">Открой для себя Нидерланды с новой стороны 🇳🇱</p>
+  </header>
+
+  <nav>
+    <a href="#history" data-translate="navHistory">История</a>
+    <a href="#gallery" data-translate="navGallery">Галерея</a>
+    <a href="#map" data-translate="navMap">Карта</a>
+    <a href="#places" data-translate="navPlaces">Достопримечательности</a>
+
+    <select id="language-select" aria-label="Выбор языка">
+      <option value="ru">🇷🇺 Русский</option>
+      <option value="nl">🇳🇱 Nederlands</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="ar">🇸🇦 العربية</option>
+    </select>
+  </nav>
+
+  <main>
+    <section id="history" class="card">
+      <h2 data-translate="historyTitle">История Purmerend</h2>
+
+      <article class="history-block">
+        <h3 data-translate="foundingTitle">Основание и ранняя история</h3>
+        <p data-translate="foundingText">
+        Purmerend появился как небольшое рыбацкое поселение на участке между озёрами Purmermeer, Beemster и Wormer.
+        В 1410 году Виллем Эггерт (Willem Eggert) построил замок, а в 1434 году муниципалитет получил права города.
+        </p>
+      </article>
+
+      <article class="history-block">
+        <h3 data-translate="developmentTitle">XVII—XIX века</h3>
+        <p data-translate="developmentText">
+        В XVII веке были осушены близлежащие озёра (Beemster, Purmer, Wormer), что привело к развитию сельского хозяйства.
+        В XIX веке улучшилось судоходство и транспорт — важную роль сыграл Noordhollandsch Kanaal.
+        </p>
+      </article>
+
+      <article class="history-block">
+        <h3 data-translate="modernTitle">XX—XXI века</h3>
+        <p data-translate="modernText">
+        В XX веке Purmerend развивался как пригород Амстердама; в 2022 муниципалитет Beemster был присоединён к Purmerend.
+        Сегодня город известен рынками, зелёными зонами и населением около 80 000 человек.
+        </p>
+      </article>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2 data-translate="galleryTitle">Фотогалерея</h2>
+
+      <div class="slider-wrapper">
+        <div class="slider" id="slider">
+          <!-- slides populated by script -->
+        </div>
+        <button class="prev" aria-label="Previous slide">‹</button>
+        <button class="next" aria-label="Next slide">›</button>
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+    <section id="map" class="card">
+      <h2 data-translate="mapTitle">Карта</h2>
+      <p data-translate="mapText">Посмотрите, где находится Purmerend:</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.466820466018!2d4.944507615978192!3d52.50596697981156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6099267d6e011%3A0x59f3ff7f4f9bce5d!2sPurmerend%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1696445900000!5m2!1sen!2snl" 
+        width="100%" height="400" style="border:0;border-radius:10px;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <section id="places" class="card">
+      <h2 data-translate="placesTitle">Достопримечательности</h2>
+      <img src="images/1.jpg" alt="Koemarkt" class="place-hero">
+      <div class="places-grid">
+        <div class="place">
+          <h3>Koemarkt</h3>
+          <p>Историческая площадь в центре города, место проведения ярмарок и рынков, с кафе и местной жизнью.</p>
+        </div>
+        <div class="place">
+          <h3>St. Nicolaaskerk</h3>
+          <p>Неоготическая церковь XIX века с красивыми витражами.</p>
+        </div>
+        <div class="place">
+          <h3>De Where</h3>
+          <p>Набережная и канал — отличное место для прогулок и лодочных прогулок.</p>
+        </div>
+        <div class="place">
+          <h3>Melkwegbrug</h3>
+          <p>Современный пешеходный мост с вечерней подсветкой.</p>
+        </div>
+        <div class="place">
+          <h3>Musea Waterland</h3>
+          <p>Музей, посвящённый истории региона и культуре.</p>
+        </div>
+        <div class="place">
+          <h3>Purmerbos</h3>
+          <p>Зелёный лесной парк, популярный у велосипедистов и семей.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="card">
+    <p data-translate="footer">© 2025 Purmerend Info</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
