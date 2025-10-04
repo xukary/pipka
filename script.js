@@ -1,11 +1,11 @@
 // ===== Slider using local images 1..5 =====
 const slides = [
-  'images/1.jpg',
-  'images/2.jpg',
-  'images/3.jpg',
-  'images/4.jpg',
-  'images/5.jpg'
-];
+  'images/download.jpg',
+  'images/depositphotos_616093790-stock-photo-traditional-wooden-colorful-waterside-houses.jpg',
+  'images/istockphoto-2180006601-612x612.jpg',
+  'images/istockphoto-1310710560-612x612.jpg',
+  'images/istockphoto-1936206156-612x612.jpg'
+];  
 
 const slider = document.getElementById('slider');
 slides.forEach(src => {
